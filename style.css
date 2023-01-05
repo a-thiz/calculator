@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc{
+    width: 600px;
+    border: solid 2px #555;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 80px;
+    gap: 20px;
+}
+
+.calc_result{
+    grid-column: 1/-1;
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.calc_btn{
+    font-size: 30px;
+}
+
+.calc_operator{
+    background-color: aquamarine;
+    font-size: 30px;
+}
+
+.calc_reset{
+    background-color: crimson;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.calc_sum{
+    background-color: darkblue;
+    color: aliceblue;
+    font-size: 30px;
+    grid-column: 2/-1;
+}
